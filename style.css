@@ -7,6 +7,7 @@ body {
   background-color: #000;
   color: #fff;
   line-height: 1.85;
+  min-height: 100vh;
 }
 
 a {
@@ -50,7 +51,7 @@ h1, h2, h3, h4 {
 }
 
 .footer img {
-  max-height: 35px;
+  max-height: 40px;
   margin: 10px;
 }
 
@@ -65,4 +66,22 @@ h1, h2, h3, h4 {
   width: 100%;
   background-color: #fff;
   height: 15px;
+  position: relative;
+}
+.skills .progress-bar:after {
+  content: "";
+  height: 10px;
+  background-color: rgb(255, 166, 1);
+  position: absolute;
+  left: 5px;
+  top: 0px;
+}
+.skills .progress-bar.css:after {
+  width: 70%;
+}
+.skills .progress-bar.js:after {
+  width: 60%;
+}
+.skills .progress-bar.figma:after {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
