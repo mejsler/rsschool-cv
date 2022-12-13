@@ -32,6 +32,9 @@ img {
 
 h1 {
   font-size: 100px;
+}
+
+h1, h2, h3, h4 {
   font-weight: bold;
 }
 
@@ -49,4 +52,17 @@ h1 {
 .footer img {
   max-height: 35px;
   margin: 10px;
+}
+
+.skills h5 {
+  margin: 0;
+  margin-left: 15px;
+}
+.skills svg {
+  width: 30px;
+}
+.skills .progress-bar {
+  width: 100%;
+  background-color: #fff;
+  height: 15px;
 }/*# sourceMappingURL=style.css.map */
