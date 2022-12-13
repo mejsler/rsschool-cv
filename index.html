@@ -21,11 +21,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="flex">
-          <img src="assets/img/photo.png" alt="My photo" />
-          <div class="title-content">
-            <h1>Arseny Fors</h1>
-            <h2>Wannabe Junior Web Developer</h2>
+        
             <nav class="nav">
               <ul class="nav-list">
                 <li class="nav-item">
@@ -54,13 +50,26 @@
                 </li>
               </ul>
             </nav>
-          </div>
         </div>
       </div>
     </header>
     <main class="main">
       <div class="container">
-        <h1>das</h1>
+        <section class="section" id="profile">
+            <div class="flex">
+            <img src="assets/img/photo.png" alt="My photo" />
+            <div class="profile">
+              <h1>Arseny Fors</h1>
+              <h2>Wannabe Junior Web Developer</h2></div>
+        </section>
+        <section class="section w-40" id="summary">
+            <h2>Summary</h2>
+         <p>I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who doesn't believe in misleading other people and tries to be fair in everything I do.</p>
+        </section>
+        <section class="section" id="code">
+            <h2>Code example</h2>
+         <pre><code>const order = str => str.split(' ').sort((a,b) => a.match(/\d/) - b.match(/\d/)).join(' ')</code></pre>
+        </section>
       </div>
     </main>
     <footer class="footer">
