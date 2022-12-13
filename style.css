@@ -4,10 +4,11 @@ html {
 
 body {
   font: 400 16px "Montserrat", sans-serif;
-  background-color: #000;
+  background-color: #000405;
   color: #fff;
   line-height: 1.85;
   min-height: 100vh;
+  padding-top: 110px;
 }
 
 a {
@@ -20,6 +21,11 @@ a:hover {
   color: rgb(255, 166, 1);
 }
 
+ul {
+  padding: 0;
+  line-height: 2.5;
+  margin: 0;
+}
 ul li {
   list-style-type: none;
 }
@@ -39,11 +45,13 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+.header {
+  background-color: #000405;
+}
 .header .nav-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 30px 0;
   padding: 0;
 }
 .header .nav-item {
@@ -84,4 +92,27 @@ h1, h2, h3, h4 {
 }
 .skills .progress-bar.figma:after {
   width: 50%;
+}
+
+.projects .box {
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  margin: 15px;
+}
+.projects .box img {
+  border-radius: 5px;
+}
+.projects .box:hover {
+  background-color: rgba(255, 255, 255, 0.0392156863);
+}
+
+.code code {
+  color: rgb(255, 166, 1);
+  font-size: 16px;
+}
+.code pre {
+  background-color: rgba(255, 255, 255, 0.0392156863);
+  padding: 10px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

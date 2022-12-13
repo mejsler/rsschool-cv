@@ -3,12 +3,14 @@ $accent: rgb(255, 166, 1)
 html
     scroll-behavior: smooth
 
+
 body
     font: 400 16px "Montserrat", sans-serif
-    background-color: #000
+    background-color: #000405
     color: #fff
     line-height: 1.85
     min-height: 100vh
+    padding-top: 110px
 
 a
     color: #fff
@@ -18,8 +20,12 @@ a
         transition: 0.3s all ease
         color: $accent
 
-ul li
-    list-style-type: none
+ul 
+    padding: 0
+    line-height: 2.5
+    margin: 0
+    li
+        list-style-type: none
 
 img
     max-width: 100%
@@ -33,11 +39,11 @@ h1, h2, h3, h4
     font-weight: bold
 
 .header
+    background-color: #000405
     .nav-list
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        margin: 30px 0
         padding: 0
     .nav-item
         margin: 15px
@@ -75,4 +81,23 @@ h1, h2, h3, h4
             &:after
                 width: 50%
 
+.projects
+    .box
+        padding: 20px
+        border-radius: 5px
+        transition: background-color .5s ease
+        margin: 15px
+        img
+            border-radius: 5px
+        &:hover
+            background-color: #ffffff0a
+
+.code
+    code
+        color: $accent
+        font-size: 16px
+    pre
+        background-color: #ffffff0a
+        padding: 10px
+        border-radius: 5px
                
