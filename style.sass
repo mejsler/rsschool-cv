@@ -1,0 +1,127 @@
+$accent: #00bfff
+
+html
+    scroll-behavior: smooth
+
+body
+    font: 400 16px "Montserrat", sans-serif
+    background-color: #000405
+    color: #fff
+    line-height: 1.85
+    min-height: 100vh
+    padding-top: 75px
+
+a
+    color: #fff
+    font-weight: bold
+    text-decoration: none
+    &:hover
+        transition: all .3s ease
+        color: $accent
+
+ul
+    padding: 0
+    line-height: 2.5
+    margin: 0
+    li
+        list-style-type: none
+
+img
+    max-width: 100%
+    height: auto
+    object-fit: cover
+
+h1
+    font-size: 100px
+
+h1, h2, h3, h4
+    font-weight: bold
+
+.header
+    background-color: #000405
+    .nav-list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 0
+    .nav-item
+        margin: 15px
+
+.footer
+    margin-bottom: 20px
+    img
+        max-height: 40px
+        margin: 10px
+
+.skills
+    h5
+        margin: 0
+        margin-left: 15px
+    svg
+        width: 30px
+    .progress-bar
+        width: 100%
+        background-color: #fff
+        height: 15px
+        position: relative
+        &:after
+            content: ''
+            height: 10px
+            background-color: $accent
+            position: absolute
+            left: 5px
+            top: 0px
+    .progress-bar.css
+        &:after
+            width: 70%
+    .progress-bar.js
+        &:after
+            width: 55%
+    .progress-bar.figma
+        &:after
+            width: 65%
+
+.projects
+    .box
+        padding: 20px
+        border-radius: 5px
+        transition: all .3s ease
+        margin: 15px
+        border: 1px solid #ffffff0a
+        img
+            border-radius: 5px
+            filter: grayscale(100)
+        &:hover
+            background-color: #ffffff0a
+            img
+                filter: grayscale(0)
+
+.code
+    code
+        color: $accent
+        font-size: 16px
+    pre
+        background-color: #ffffff0a
+        padding: 10px
+        border-radius: 5px
+
+.education
+    border-bottom: 1px solid #ffffff0a
+    padding-bottom: 40px
+    sub
+        opacity: .2
+    span
+        font-size: 50px
+        line-height: 1
+        font-weight: bold
+    .box
+        img
+            max-height: 50px
+            margin: 20px 0
+            width: 100%
+
+.profile
+    padding-top: 50px
+    border-radius: 5px
+    img
+        margin-left: -12px
