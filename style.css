@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 16px "Montserrat", sans-serif;
+  background-color: #000405;
+  color: #fff;
+  line-height: 1.85;
+  min-height: 100vh;
+  padding-top: 75px;
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  transition: all 0.3s ease;
+  color: #00bfff;
+}
+
+ul {
+  padding: 0;
+  line-height: 2.5;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+.header {
+  background-color: #000405;
+}
+.header .nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.header .nav-item {
+  margin: 15px;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+.footer img {
+  max-height: 40px;
+  margin: 10px;
+}
+
+.skills h5 {
+  margin: 0;
+  margin-left: 15px;
+}
+.skills svg {
+  width: 30px;
+}
+.skills .progress-bar {
+  width: 100%;
+  background-color: #fff;
+  height: 15px;
+  position: relative;
+}
+.skills .progress-bar:after {
+  content: "";
+  height: 10px;
+  background-color: #00bfff;
+  position: absolute;
+  left: 5px;
+  top: 0px;
+}
+.skills .progress-bar.css:after {
+  width: 70%;
+}
+.skills .progress-bar.js:after {
+  width: 55%;
+}
+.skills .progress-bar.figma:after {
+  width: 65%;
+}
+
+.projects .box {
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.0392156863);
+}
+.projects .box img {
+  border-radius: 5px;
+  filter: grayscale(100);
+}
+.projects .box:hover {
+  background-color: rgba(255, 255, 255, 0.0392156863);
+}
+.projects .box:hover img {
+  filter: grayscale(0);
+}
+
+.code code {
+  color: #00bfff;
+  font-size: 16px;
+}
+.code pre {
+  background-color: rgba(255, 255, 255, 0.0392156863);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.education {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.0392156863);
+  padding-bottom: 40px;
+}
+.education sub {
+  opacity: 0.2;
+}
+.education span {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: bold;
+}
+.education .box img {
+  max-height: 50px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.profile {
+  padding-top: 50px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to bottom,
+    hsl(195.06, 100%, 50%) 0%,
+    hsl(195.06, 100%, 50%) 25%,
+    hsl(195.06, 100%, 33.33%) 25%,
+    hsl(195.06, 100%, 33.33%) 50%,
+    hsl(195.06, 100%, 16.67%) 50%,
+    hsl(195.06, 100%, 16.67%) 75%,
+    hsl(0, 0%, 0%) 75%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+.profile img {
+  margin-left: -12px;
+} /*# sourceMappingURL=style.css.map */
